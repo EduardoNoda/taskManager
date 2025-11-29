@@ -7,13 +7,11 @@ import java.util.List;
 public interface UserService {
     UserModel createUser(UserModel user);
 
-    UserModel changeRoleToAdmin(UserModel user);
+    UserModel changeRoleToAdmin(Long userId);
 
     List<UserModel> findAll();
 
-    UserModel getUserByEmail(String email);
-
-    boolean isUserEmailPresent(String email);
+    boolean getUserByEmail(String email);
 
     UserModel getUserById(Long userId);
 
