@@ -14,8 +14,6 @@ public interface TaskService {
 
     List<TaskModel> findAll();
 
-    List<TaskModel> findByOwnerOrderByDateDesc(String ownerName);
-
     void setTaskCompleted(Long id);
 
     void setTaskNotCompleted(Long id);
